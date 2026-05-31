@@ -1,6 +1,6 @@
 # Cybersecurity Analyst Portfolio
 
-> Entry-level SOC Analyst | ISC2 CC · CompTIA CySA+ (in progress) | Passionate about threat detection, incident response, and building security operations from the ground up.
+> Entry-level Cybersecurity Analyst | ISC2 CC · CompTIA CySA+ (in progress) | Passionate about threat detection, incident response, and building security operations from the ground up.
 
 ---
 
