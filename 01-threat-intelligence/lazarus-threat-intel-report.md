@@ -182,18 +182,17 @@ Lazarus uses HTTPS for C2 to blend with normal traffic. They frequently leverage
 
 ### Network IOCs (Defanged)
 
-```
-# Domains associated with Operation DreamJob infrastructure
-update-software[.]net
-careers-intel[.]com
-job-amazon[.]com
-blockchain-careers[.]io
+| Type | Indicator | Source | Date Reported | Confidence |
+|------|-----------|--------|--------------|------------|
+| Domain | update-software[.]net | ESET Research — Operation DreamJob | Oct 2025 | Medium — rotates frequently |
+| Domain | careers-intel[.]com | JPCERT/CC Lazarus Research | 2024 | Medium — rotates frequently |
+| Domain | job-amazon[.]com | CISA AA22-108A | Apr 2022 | Low — aged, verify before use |
+| Domain | blockchain-careers[.]io | SOCRadar APT Profile | Jan 2025 | Medium |
+| IP | 23.106.122[.]254 | CISA AA22-108A | Apr 2022 | Low — aged, verify before use |
+| IP | 104.168.145[.]204 | CISA AA22-108A | Apr 2022 | Low — aged, verify before use |
+| IP | 211.239.117[.]117 | ANY.RUN Sandbox Analysis (APT38 sample) | Mar 2025 | Medium |
 
-# IP addresses associated with Lazarus C2 (from CISA AA22-108A)
-# Validate before blocking — infrastructure is frequently reused by multiple actors
-23.106.122[.]254
-104.168.145[.]204
-```
+> All network IOCs are defanged (brackets replacing dots) to prevent accidental navigation. Validate against VirusTotal and current CISA advisories before deploying as blocking rules.
 
 ### Behavioral IOCs (Most Durable — Infrastructure-Independent)
 
